@@ -1,0 +1,54 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+}
+
+body {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/rick_morty_cool-small.png );
+}
+
+.container {
+  align-self: center;
+  padding: 1rem;
+  width: 400px;
+  border: 3px solid rgb(250, 108, 249);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.7)
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media all and (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+
+  *{
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+  }
+
+  img{
+    width: 100%;
+  }
+
+
+}
